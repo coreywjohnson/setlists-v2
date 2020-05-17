@@ -4,7 +4,7 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 android_sdk_repository(
     name = "androidsdk",
     api_level = 29,
-    build_tools_version = "30.0.0-rc4"
+    build_tools_version = "29.0.3"
 )
 
 # BEGIN io_bazel_rules_kotlin
