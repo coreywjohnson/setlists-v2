@@ -1,5 +1,8 @@
 android_binary(
     name = "debug_apk",
     custom_package = "com.coreywjohnson.setlists",
-    manifest = "AndroidManifest.xml",
+    manifest = "src/main/AndroidManifest.xml",
+    deps = [
+        "//setlists-app/app:src_main"
+    ]
 )

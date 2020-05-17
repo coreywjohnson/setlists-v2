@@ -1,0 +1,19 @@
+load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kt_android_library")
+
+kt_android_library(
+    name = "src_main",
+    custom_package = "com.coreywjohnson.setlists",
+    manifest = "src/main/AndroidManifest.xml",
+    srcs = glob(["src/main/**/*.kt"]),
+    resource_files = glob(["src/main/res/**"]),
+    visibility = ["//setlists-app:__subpackages__"],
+    deps = [
+        "@maven//:androidx_appcompat_appcompat",
+        "@maven//:androidx_core_core",
+        "@maven//:androidx_core_core_ktx",
+        "@maven//:androidx_drawerlayout_drawerlayout",
+        "@maven//:androidx_fragment_fragment",
+        "@maven//:androidx_lifecycle_lifecycle_common",
+        "@maven//:androidx_lifecycle_lifecycle_viewmodel",
+    ],
+)
