@@ -1,0 +1,5 @@
+android_binary(
+    name = "debug_apk",
+    custom_package = "com.coreywjohnson.setlists",
+    manifest = "AndroidManifest.xml",
+)
