@@ -2,6 +2,7 @@
     package="com.coreywjohnson.setlists">
 
     <application
+        android:name=".SetlistsApplication"
         android:label="Setlists">
 
         <activity

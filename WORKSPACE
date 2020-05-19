@@ -41,6 +41,9 @@ maven_install(
     artifacts = [
         "androidx.appcompat:appcompat:1.0.2",
         "androidx.core:core-ktx:1.0.1",
+        "com.google.dagger:dagger:2.27",
+        "com.google.dagger:dagger-compiler:2.27",
+        "javax.inject:javax.inject:1",
     ],
     repositories = [
         "https://maven.google.com",
