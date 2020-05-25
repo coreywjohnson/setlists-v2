@@ -1,0 +1,12 @@
+load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kt_jvm_library")
+
+kt_jvm_library(
+    name = "src_main",
+    srcs = glob(["src/main/kotlin/**/*.kt"]),
+    visibility = [
+        "//libraries/setlists-api:__subpackages__",
+        "//setlists-app:__subpackages__",
+    ],
+    deps = [
+    ],
+)
