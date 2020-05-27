@@ -1,0 +1,21 @@
+load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kt_android_library")
+
+kt_android_library(
+    name = "src_main",
+    custom_package = "com.coreywjohnson.setlists.api",
+    srcs = glob(["src/main/kotlin/**/*.kt"]),
+    manifest = "src/main/AndroidManifest.xml",
+    visibility = ["//visibility:public"],
+    deps = [
+        "@maven//:com_squareup_retrofit2_converter_moshi",
+        "@maven//:com_squareup_retrofit2_retrofit",
+        "@maven//:com_squareup_retrofit2_adapter_rxjava3",
+        "@maven//:io_reactivex_rxjava3_rxjava",
+        "@maven//:io_reactivex_rxjava3_rxandroid",
+        "//libraries/setlists-api/model:src_main",
+        "//third-party/dagger:dagger"
+    ],
+    exports = [
+        "//libraries/setlists-api/model:src_main"
+    ],
+)

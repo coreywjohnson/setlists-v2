@@ -43,6 +43,11 @@ maven_install(
         "androidx.core:core-ktx:1.0.1",
         "com.google.dagger:dagger:2.27",
         "com.google.dagger:dagger-compiler:2.27",
+        "com.squareup.retrofit2:converter-moshi:2.9.0",
+        "com.squareup.retrofit2:retrofit:2.9.0",
+        "com.squareup.retrofit2:adapter-rxjava3:2.9.0",
+        "io.reactivex.rxjava3:rxandroid:3.0.0",
+        "io.reactivex.rxjava3:rxjava:3.0.4",
         "javax.inject:javax.inject:1",
     ],
     repositories = [
