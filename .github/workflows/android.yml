@@ -18,9 +18,9 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Bazel
-      run: ./bazeliskl build //setlists-app/app-apk:debug_apk
+      run: ./bazeliskl build //setlists-app/app-apk:bin_debug
     - name: Store APK
       uses: actions/upload-artifact@v1
       with:
         name: app
-        path: bazel-bin/setlists-app/app-apk/debug_apk.apk
+        path: bazel-bin/setlists-app/app-apk/bin_debug.apk
